@@ -21,11 +21,23 @@ sudo curl -sSL https://get.docker.com | sh
 #### Master
 ````
 docker swarm init
+
+nano /boot/cmdline.txt
+  cgroup_enable=cpuset cgroup_enable=memorystring
 ````
 
 #### Slave
+
+##### Linux
 ````
 docker swarm join --token TOKEN
+````
+
+##### Windows
+````
+docker-machine create worker
+docker-machine env worker
+docker-machine ssh worker
 ````
 
 
@@ -62,6 +74,10 @@ sudo umount mnt/ext4
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 apt-get update && apt-get install -y kubeadm
+dphys-swapfile swapoff && dphys-swapfile uninstall && update-rc.d dphys-swapfile remove
+nano /boot/cmdline.txt
+  add at the end: cgroup_enable=cpuset cgroup_enable=memory
+kubeadm init --config kubeadm.yaml
 ````
 
 
