@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ "$(whoami)" != "root" ]
 then
     sudo su -s "$0"
