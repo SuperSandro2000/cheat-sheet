@@ -1,14 +1,14 @@
 #!/bin/sh
 if [ "$(whoami)" != "root" ]
 then
-    sudo su -s "$0"
+    echo You need to run this script as sudo!
     exit
 fi
 
 curl -fsSL https://download.docker.com/linux/raspbian/gpg | apt-key add -
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-"deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" | tee /etc/apt/sources.list.d/kubernetes.list
-"deb http://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list
+echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" > /etc/apt/sources.list.d/docker.list
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 
 apt-get update
 apt-get upgrade -y && apt-get dist-upgrade -y
