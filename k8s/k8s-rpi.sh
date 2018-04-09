@@ -16,8 +16,12 @@ apt-get install docker-ce kubeadm -y
 apt-get autoremove -y && apt-get autoclean -y
 
 dphys-swapfile swapoff && dphys-swapfile uninstall && update-rc.d dphys-swapfile remove
-sed -e 's/$/cgroup_enable=cpuset cgroup_enable=memorystring/' -i /boot/cmdline.txt
-echo "gpu_mem=16" > file
+if ! grep -q cgroup_enable "/boot/cmdline.txt"; then
+  sed -e 's/$/ cgroup_enable=cpuset cgroup_enable=memorystring/' -i /boot/cmdline.txt
+fi
+if ! grep -q gpu_mem= "/boot/config.txt"; then
+  echo "gpu_mem=16" > /boot/config.txt
+fi
 
 timedatectl set-timezone Europe/Berlin
 usermod $SUDO_USER -aG docker
