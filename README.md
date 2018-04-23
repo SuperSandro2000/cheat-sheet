@@ -8,6 +8,7 @@
 * [Kubernetes](#kubernetes)
 * [Misc](#misc)
   * [ASF](#asf)
+  * [Cron jobs](#cron)
   * [Gitea](#gitea)
   * [Linux](#linux)
   * [Music](#music)
@@ -16,6 +17,8 @@
 ## Docker
 ````
 sudo curl -sSL https://get.docker.com | sh
+
+docker build -t jekyll-rpi .
 ````
 
 #### Compose
@@ -97,6 +100,13 @@ kubeadm init --config kubeadm.yaml
 #### ASF
 ````
 sudo apt-get install libunwind8
+````
+
+#### Cron
+Replace things in double quotes
+````
+curl -A 'Bash Updater/1.0 someone@example.com' -i -H 'Authorization:Basic "Base64 user:pw"' -XGET 'dynupdate.no-ip.com/nic/update?hostname="hostname"&myip='$(curl -s http://whatismyip.akamai.com/)
+curl 'https://api.dynu.com/nic/update?username="username"&hostname="hostname.dynu.net"&password="sha-256 encoded pw"&myip='$(curl -s http://whatismyip.akamai.com/)
 ````
 
 #### Gitea
