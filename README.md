@@ -18,7 +18,7 @@
 ````
 sudo curl -sSL https://get.docker.com | sh
 
-docker build -t jekyll-rpi .
+docker build -t oauth2_proxy .
 ````
 
 #### Compose
@@ -35,7 +35,7 @@ docker-compose up -d --remove-orphans
 docker swarm init
 
 nano /boot/cmdline.txt
-  cgroup_enable=cpuset cgroup_enable=memorystring
+  cgroup_enable=cpuset cgroup_enable=memorystring swapaccount=1
 ````
 
 #### Slave
