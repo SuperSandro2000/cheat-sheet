@@ -17,8 +17,8 @@
 ## Docker
 ````
 sudo curl -sSL https://get.docker.com | sh
-
-docker build -t oauth2_proxy .
+docker images | awk '(NR>1) && ($2!~/none/) {print $1":"$2}' | xargs -L1 docker pull
+docker build -t oauth2_proxy-arm .
 ````
 
 #### Compose
