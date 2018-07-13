@@ -6,6 +6,7 @@
   * [Compose](#compose)
   * [Swam](#swarm)
 * [Kubernetes](#kubernetes)
+* [Ruby](#ruby)
 * [Misc](#misc)
   * [ASF](#asf)
   * [Cron jobs](#cron)
@@ -14,6 +15,35 @@
   * [Music](#music)
   * [Yunohost](#yunohost)
 
+
+## Custom kernel
+````
+sudo SKIP_KERNEL=1 rpi-update
+
+cd linux
+KERNEL=kernel7
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+
+make -j6 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs
+
+mkdir mnt
+mkdir mnt/fat32
+mkdir mnt/ext4
+sudo mount /dev/sdc1 mnt/fat32
+sudo mount /dev/sdc2 mnt/ext4
+
+sudo env "PATH=$PATH" make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=mnt/ext4 modules_install
+
+sudo cp arch/arm/boot/zImage mnt/fat32/kernel7-ksm.img
+sudo cp arch/arm/boot/dts/*.dtb mnt/fat32/
+sudo cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
+sudo cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
+sudo umount mnt/fat32
+sudo umount mnt/ext4
+````
+
+  
 ## Docker
 ````
 sudo curl -sSL https://get.docker.com | sh
@@ -55,34 +85,6 @@ docker-machine ssh worker
 ````
 
 
-## Custom kernel
-````
-sudo SKIP_KERNEL=1 rpi-update
-
-cd linux
-KERNEL=kernel7
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
-
-make -j6 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs
-
-mkdir mnt
-mkdir mnt/fat32
-mkdir mnt/ext4
-sudo mount /dev/sdc1 mnt/fat32
-sudo mount /dev/sdc2 mnt/ext4
-
-sudo env "PATH=$PATH" make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=mnt/ext4 modules_install
-
-sudo cp arch/arm/boot/zImage mnt/fat32/kernel7-ksm.img
-sudo cp arch/arm/boot/dts/*.dtb mnt/fat32/
-sudo cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
-sudo cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
-sudo umount mnt/fat32
-sudo umount mnt/ext4
-````
-
-
 ## Kubernetes
 ````
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -94,6 +96,21 @@ nano /boot/cmdline.txt
   add at the end: cgroup_enable=cpuset cgroup_enable=memory
 
 kubeadm init --config kubeadm.yaml
+````
+
+
+## Ruby
+````
+sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+sudo gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+echo 'export rvm_prefix="$HOME"' > /root/.rvmrc
+echo 'export rvm_path="$HOME/.rvm"' >> /root/.rvmrc
+curl -sSL https://get.rvm.io | bash -s stable
+source /etc/profile.d/rvm.sh
+usermod -aG rvm username
+rvm install 2.5
+rvm use 2.5 --default
 ````
 
 
