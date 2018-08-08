@@ -10,7 +10,7 @@ for file in *.img.lz4; do
   unlz4 $file $filex
   rm $file
 done
-for file in *.img; do
+for file in "system.img vendor.img userdata.img"; do
   filex=$(echo $file | sed 's/.img/.raw.img/g')
   simg2img $file $filex
   rm $file
