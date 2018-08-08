@@ -1,6 +1,6 @@
 #! /bin/bash
 unzip *.zip
-for file in *.tar.md5; do
+for file in AP*.tar.md5; do
   folder=$(echo $file | sed 's/.tar.md5//g')
   tar -xf $file
   rm $file
