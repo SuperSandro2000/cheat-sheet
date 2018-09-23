@@ -57,16 +57,14 @@ sudo umount mnt/ext4
 ````
 sudo curl -sSL https://get.docker.com | sh
 docker images | awk '(NR>1) && ($2!~/none/) {print $1":"$2}' | xargs -L1 docker pull
-docker-compose up -d --remove-orphans
-docker-compose pull && docker-compose up -d --remove-orphans
 docker build -t oauth2_proxy-arm .
 ````
 
 #### Compose
 ````
-sudo apt-get install python-pip
-sudo pip install docker-compose
+sudo apt-get install python-pip && pip install docker-compose
 docker-compose up -d --remove-orphans
+docker-compose pull && docker-compose up -d --remove-orphans
 ````
 
 #### Swarm
