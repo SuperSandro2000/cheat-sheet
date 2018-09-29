@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Android](#android)
 * [Custom kernel](#custom-kernel)
+* [ddclient](#ddclient)
 * [Docker](#docker)
   * [Compose](#compose)
   * [Swam](#swarm)
@@ -50,6 +51,27 @@ sudo cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
 sudo cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
 sudo umount mnt/fat32
 sudo umount mnt/ext4
+````
+
+## ddclient
+Replace things in double quotes!
+domain.tld is your cloudflare domain you want to update. eg: google.com
+````
+daemon=600
+syslog=yes
+mail="user"
+mail-failure="user"
+pid=/var/run/ddclient.pid
+ssl=yes
+use=web, web=whatismyip.akamai.com
+
+# CloudFlare
+protocol=cloudflare, \
+zone="domain.tld", \
+ttl=1, \
+login=your.user@example.com, \
+password="cloudflare api key" \
+"domain.tld, my.domain.tld"
 ````
 
   
@@ -129,7 +151,7 @@ sudo apt-get install libunwind8
 ````
 
 #### Cron
-Replace things in double quotes
+Replace things in double quotes!
 ````
 curl -A 'Bash Updater/1.0 someone@example.com' -i -H 'Authorization:Basic "Base64 user:pw"' -XGET 'dynupdate.no-ip.com/nic/update?hostname="hostname"&myip='$(curl -s http://whatismyip.akamai.com/)
 curl 'https://api.dynu.com/nic/update?username="username"&hostname="hostname.dynu.net"&password="sha-256 encoded pw"&myip='$(curl -s http://whatismyip.akamai.com/)
