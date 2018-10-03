@@ -7,6 +7,7 @@
 * [Docker](#docker)
   * [Compose](#compose)
   * [Swam](#swarm)
+* [Fail2Ban](#fail2ban)
 * [Kubernetes](#kubernetes)
 * [Ruby](#ruby)
 * [Misc](#misc)
@@ -111,6 +112,16 @@ Windows
 docker-machine create worker
 docker-machine env worker
 docker-machine ssh worker
+````
+
+
+## Fail2Ban
+````
+curl -JLO https://github.com/fail2ban/fail2ban/archive/0.10.3.1.tar.gz -o fail2ban-0.10.3.1.tar.gz \
+&& tar xf fail2ban-0.10.3.1.tar.gz \
+&& rm fail2ban-0.10.3.1.tar.gz \
+&& cd fail2ban-0.10.3.1 \
+&& sudo python setup.py install
 ````
 
 
