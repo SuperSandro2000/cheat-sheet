@@ -102,7 +102,7 @@ docker-compose pull && docker-compose up -d --remove-orphans
 
 ##### Swarm Compose
 ````
-docker stack deploy
+docker stack deploy --compose-file docker-compose.yml STACKNAME
 ````
 
 ##### Master
