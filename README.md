@@ -9,6 +9,7 @@
   * [Swam](#swarm)
 * [Fail2Ban](#fail2ban)
 * [Kubernetes](#kubernetes)
+* [Python](#python)
 * [Ruby](#ruby)
 * [Misc](#misc)
   * [ASF](#asf)
@@ -136,6 +137,12 @@ nano /boot/cmdline.txt
   add at the end: cgroup_enable=cpuset cgroup_enable=memory
 
 kubeadm init --config kubeadm.yaml
+````
+
+
+## Python
+````
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 ````
 
 
