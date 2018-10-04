@@ -7,6 +7,9 @@
 * [Docker](#docker)
   * [Compose](#compose)
   * [Swam](#swarm)
+    * [Swarm Compose](#swarm-compose)
+    * [Master](#master)
+    * [Worker](#worker)
 * [Fail2Ban](#fail2ban)
 * [Kubernetes](#kubernetes)
 * [Python](#python)
@@ -80,6 +83,10 @@ password="cloudflare api key" \
 ## Docker
 ````
 sudo curl -sSL https://get.docker.com | sh
+
+nano /boot/cmdline.txt
+  cgroup_enable=cpuset cgroup_enable=memorystring swapaccount=1
+
 docker images | awk '(NR>1) && ($2!~/none/) {print $1":"$2}' | xargs -L1 docker pull
 docker build -t oauth2_proxy-arm .
 ````
@@ -93,15 +100,19 @@ docker-compose pull && docker-compose up -d --remove-orphans
 
 #### Swarm
 
+##### Swarm Compose
+````
+docker stack deploy
+````
+
 ##### Master
 ````
 docker swarm init
-
-nano /boot/cmdline.txt
-  cgroup_enable=cpuset cgroup_enable=memorystring swapaccount=1
+docker swarm join-token manager
+docker swarm join-token worker
 ````
 
-#### Slave
+#### Worker
 
 Linux
 ````
