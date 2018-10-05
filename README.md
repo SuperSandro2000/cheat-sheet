@@ -7,7 +7,6 @@
 * [Docker](#docker)
   * [Compose](#compose)
   * [Swam](#swarm)
-    * [Swarm Compose](#swarm-compose)
     * [Master](#master)
     * [Worker](#worker)
 * [Fail2Ban](#fail2ban)
@@ -100,11 +99,11 @@ docker-compose pull && docker-compose up -d --remove-orphans
 ````
 
 #### Swarm
+````
+docker plugin install fentas/davfs
+docker stack up --compose-file docker-compose.yml --resolve-image never --prune hotpi
+````
 
-##### Swarm Compose
-````
-docker stack deploy --compose-file docker-compose.yml STACKNAME
-````
 
 ##### Master
 ````
