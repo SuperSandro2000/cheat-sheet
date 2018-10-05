@@ -91,6 +91,16 @@ docker images | awk '(NR>1) && ($2!~/none/) {print $1":"$2}' | xargs -L1 docker 
 docker build -t oauth2_proxy-arm .
 ````
 
+Postgres volume /w cifs:
+````
+db_test:
+  driver: local
+  driver_opts:
+    type: cifs
+    device: //127.0.0.1/docker/db_test
+    o: username=USER,password=PASS,uid=70,gid=70,file_mode=0700,dir_mode=0700
+````
+
 #### Compose
 ````
 sudo apt-get install python-pip && pip install docker-compose
