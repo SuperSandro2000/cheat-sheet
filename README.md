@@ -20,6 +20,7 @@
   * [Gitea](#gitea)
   * [Linux](#linux)
   * [Music](#music)
+  * [Rclone](#rclone)
   * [Yunohost](#yunohost)
 
 
@@ -212,6 +213,12 @@ sudo netstat -tulpn | grep LISTEN
 #### Music
 ````
 youtube-dl.exe -f m4a --add-metadata -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLIeMGRbbjabyKx_z0yWcjLCNCgVpDGtFW
+````
+
+#### Rclone
+````
+curl https://rclone.org/install.sh | sudo bash
+sudo apt-get install fusermount
 ````
 
 #### Yunohost
