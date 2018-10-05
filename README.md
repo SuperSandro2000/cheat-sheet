@@ -111,7 +111,7 @@ docker-compose pull && docker-compose up -d --remove-orphans
 #### Swarm
 ````
 docker plugin install fentas/davfs
-docker stack up --compose-file docker-compose.yml --resolve-image never --prune hotpi
+docker stack up --compose-file docker-compose.yml --resolve-image never --prune swarm
 ````
 
 
