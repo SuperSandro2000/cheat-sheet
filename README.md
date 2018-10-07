@@ -128,6 +128,8 @@ sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
 
 docker stack up --compose-file docker-compose.yml --resolve-image never --prune swarm
 docker service update swarm_portainer --force
+
+docker swarm update --task-history-limit 3
 ````
 
 
