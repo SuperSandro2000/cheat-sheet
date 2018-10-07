@@ -110,6 +110,8 @@ db_test:
 /etc/exports
 
 /nfs               127.0.0.1(rw,nohide,insecure,no_subtree_check,async,no_root_squash)
+
+curl -LS -H Host:portainer.example.com 192.168.178.2
 ````
 
 #### Compose
