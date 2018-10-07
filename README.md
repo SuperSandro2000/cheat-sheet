@@ -91,7 +91,7 @@ docker images | awk '(NR>1) && ($2!~/none/) {print $1":"$2}' | xargs -L1 docker 
 docker build -t oauth2_proxy-arm .
 ````
 
-Postgres volume /w cifs:
+Postgres volume mounts
 ````
 db_test:
   driver: local
@@ -99,6 +99,17 @@ db_test:
     type: cifs
     device: //127.0.0.1/docker/db_test
     o: username=USER,password=PASS,uid=70,gid=70,file_mode=0700,dir_mode=0700
+
+db_test:
+  driver: local
+  driver_opts:
+    type: nfs
+    o: addr=192.168.178.2,rw
+    device: :/nfs/db_test
+
+/etc/exports
+
+/nfs               127.0.0.1(rw,nohide,insecure,no_subtree_check,async,no_root_squash)
 ````
 
 #### Compose
