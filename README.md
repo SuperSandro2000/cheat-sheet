@@ -210,6 +210,12 @@ sudo apt-get install libunwind8
 ````
 
 #### Cron
+MOST IMPORTANT LINES IN A CRONTAB!
+````
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+````
+
 Replace things in double quotes!
 ````
 curl -A 'Bash Updater/1.0 someone@example.com' -i -H 'Authorization:Basic "Base64 user:pw"' -XGET 'dynupdate.no-ip.com/nic/update?hostname="hostname"&myip='$(curl -s http://whatismyip.akamai.com/)
