@@ -125,8 +125,8 @@ docker-compose pull && docker-compose up -d --remove-orphans
 ````
 docker plugin install fentas/davfs
 
-wget https://github.com/ContainX/docker-volume-netshare/releases/download/v0.35/docker-volume-netshare_0.35_amd64.deb
-sudo dpkg -i docker-volume-netshare_0.35_amd64.deb
+wget https://github.com/ContainX/docker-volume-netshare/releases/download/v0.35/docker-volume-netshare_0.35_armhf.deb
+sudo dpkg -i docker-volume-netshare_0.35_armhf.deb
 
 docker stack up --compose-file docker-compose.yml --resolve-image never --prune swarm
 docker service update swarm_portainer --force
