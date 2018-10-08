@@ -1,7 +1,7 @@
 # Sandro's cheat sheet
 
 ## Table of Contents
-* [Android](#android)
+* [Android](android/README.md)
 * [Custom kernel](#custom-kernel)
 * [ddclient](#ddclient)
 * [Docker](#docker)
@@ -21,14 +21,6 @@
   * [Music](#music)
   * [Rclone](#rclone)
   * [Yunohost](#yunohost)
-
-
-## Android
-```
-sudo apt-get install binutils
-echo 'readelf -d $1 | grep "\(NEEDED\)" | sed -r "s/.*\[(.*)\]/\1/"' | sudo tee -a /usr/local/bin/ldd-arm
-sudo chmod +x /usr/local/bin/ldd-arm
-```
 
 
 ## Custom kernel
