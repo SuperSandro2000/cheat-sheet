@@ -15,6 +15,8 @@
 Install docker
 ```
 sudo curl -sSL https://get.docker.com | sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
 Enabling memory cgrouping and disable swap 
