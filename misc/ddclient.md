@@ -1,4 +1,4 @@
-# Misc
+# DDClient
 
 ## Table of Contents
 * [Example config file](#example-config-file)
