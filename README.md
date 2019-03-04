@@ -26,3 +26,4 @@
   * [Rclone](misc/rclone.md)
   * [Ruby](misc/ruby.md)
   * [Yunohost](misc/yunohost.md)
+  * [VirtualBox](misc/virtualbox.md)
