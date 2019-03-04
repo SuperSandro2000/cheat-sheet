@@ -1,5 +1,7 @@
 # Sandro's cheat sheet
 
+First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.com/cirosantilli/linux-cheat). It is awesome!
+
 ## Table of Contents
 * [Android](android/README.md)
   * [Extract Samung Firmware](android/extract_samsung_firmware/README.md)
