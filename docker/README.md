@@ -6,7 +6,7 @@
 * [Swarm](#swarm)
   * [Master](#master)
   * [Worker](#worker)
-* [Swarm](docker/swarm-setup/README.md)  
+* [Swarm setup](swarm-setup/README.md)  
 * [Postgres](#postgres)
 * [Misc](#misc)
 
