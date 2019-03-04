@@ -8,6 +8,7 @@
   * [Worker](#worker)
 * [Swarm](docker/swarm-setup/README.md)  
 * [Postgres](#postgres)
+* [Misc](#misc)
 
 
 ## General
@@ -140,4 +141,12 @@ Required nfs server exports
 sudo nano /etc/exports
 
 /nfs               127.0.0.1(rw,nohide,insecure,no_subtree_check,async,no_root_squash)
+```
+
+
+## Misc
+
+Run docker image with ``.env`` file.
+```
+docker run -it --rm --env-file ~/.env alpine /bin/ash
 ```
