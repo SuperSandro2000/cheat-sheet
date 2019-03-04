@@ -22,6 +22,7 @@
   * [Gitea](misc/gitea.md)
   * [Linux](misc/linux.md)
   * [Music](misc/music.md)
+  * [Pi](misc/pi.md)
   * [Python](misc/python.md)
   * [Rclone](misc/rclone.md)
   * [Ruby](misc/ruby.md)
