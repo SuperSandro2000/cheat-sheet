@@ -41,6 +41,11 @@ Curl a specified host behind traefik
 curl -LS -H Host:portainer.example.com 192.168.2.0
 ```
 
+Install a plugin
+```
+docker plugin install fentas/davfs
+```
+
 
 ## Compose
 
@@ -60,11 +65,6 @@ docker-compose pull && docker-compose up -d --remove-orphans
 ```
 
 ## Swarm
-
-Install a plugin
-```
-docker plugin install fentas/davfs
-```
 
 Install docker-volume-netshare
 ```
@@ -94,6 +94,7 @@ Create a docker swarm
 ```
 docker swarm init
 ```
+
 Show the respective join token again.
 ```
 docker swarm join-token manager
@@ -103,12 +104,13 @@ docker swarm join-token worker
 ## Worker
 
 To join a swarm as a worker run the following on:
-Linux
+
+### Linux
 ```
 docker swarm join --token TOKEN
 ```
 
-Windows
+### Windows
 ```
 docker-machine create worker
 docker-machine env worker
