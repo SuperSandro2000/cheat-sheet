@@ -3,7 +3,6 @@
 ## Table of Contents
 * [Users](#users)
 * [Profile](#profile)
-* [Raspberry Pi Buster Upgrade](#raspberry-pi-buster-ugrade)
 * [Misc](#misc)
 
 ## Users
@@ -33,18 +32,6 @@ sudo nano /etc/bash.bashrc
   export LANGUAGE=en_GB.UTF-8
 ```
 
-## Raspberry Pi Buster Upgrade
-
-Upgrade the Raspberry Pi to Debian Buster. Currently Buster is testing and may contain bugs. Some packages do not work yet and are suggested to be removed.
-It may be necessary to manually upgrade apt sources in `/etc/apt/sources.list.d/`.
-```
-sudo apt purge freeipmi-ipmidetect freeipmi
-sed -i -e 's/wheezy/buster/g' /etc/apt/sources.list
-apt update
-DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" dist-upgrade
-DEBIAN_FRONTEND=noninteractive DEBIAN_PRIORITY=critical apt -y -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" autoremove --purge
-reboot
-```
 
 ## Misc
 
