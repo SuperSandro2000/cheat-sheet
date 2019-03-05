@@ -1,12 +1,11 @@
 #!/bin/sh
-if [ "$(whoami)" != "root" ]
-then
-    echo You need to run this script as sudo!
-    exit
+if [ "$(whoami)" != "root" ]; then
+  echo You need to run this script as sudo!
+  exit
 fi
 
 curl -fsSL https://download.docker.com/linux/raspbian/gpg | apt-key add -
-echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" > /etc/apt/sources.list.d/docker.list
+echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" >/etc/apt/sources.list.d/docker.list
 
 apt update
 apt upgrade -y && apt dist-upgrade -y
@@ -18,7 +17,7 @@ if ! grep -q cgroup_enable "/boot/cmdline.txt"; then
   sed -e 's/$/ cgroup_enable=cpuset cgroup_enable=memorystring/' -i /boot/cmdline.txt
 fi
 if ! grep -q gpu_mem= "/boot/config.txt"; then
-  echo "gpu_mem=16" >> /boot/config.txt
+  echo "gpu_mem=16" >>/boot/config.txt
 fi
 
 timedatectl set-timezone Europe/Berlin

@@ -1,10 +1,12 @@
 # Linux Kernel
 
 ## Table of Contents
-* [Cross-Compile RPI kernel](#cross-compile-rpi-kernel)
+
+- [Cross-Compile RPI kernel](#cross-compile-rpi-kernel)
 
 ## Cross-Compile RPI kernel
-```
+
+```shell
 sudo SKIP_KERNEL=1 rpi-update
 
 cd linux

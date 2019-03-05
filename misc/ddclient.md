@@ -1,12 +1,14 @@
 # DDClient
 
 ## Table of Contents
-* [Example config file](#example-config-file)
+
+- [Example config file](#example-config-file)
 
 ## Example config file
-Replace things in double quotes!
-domain.tld is your cloudflare domain you want to update. eg: google.com
-```
+
+Replace things in double quotes! domain.tld is your cloudflare domain you want to update. eg: google.com
+
+```shell
 daemon=600
 syslog=yes
 mail="user"

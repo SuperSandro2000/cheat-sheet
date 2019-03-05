@@ -1,7 +1,7 @@
- echo "apiVersion: kubeadm.k8s.io/v1alpha1
+echo "apiVersion: kubeadm.k8s.io/v1alpha1
 kind: MasterConfiguration
 controllerManagerExtraArgs:
-  pod-eviction-timeout: 10s" >> kubeadm_conf.yaml
+  pod-eviction-timeout: 10s" >>kubeadm_conf.yaml
 sudo kubeadm init --config kubeadm_conf.yaml
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
