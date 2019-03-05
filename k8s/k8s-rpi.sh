@@ -10,10 +10,10 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" > /etc/apt/sources.list.d/docker.list
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 
-apt-get update
-apt-get upgrade -y && apt-get dist-upgrade -y
-apt-get install docker-ce kubeadm -y
-apt-get autoremove -y && apt-get autoclean -y
+apt update
+apt upgrade -y && apt dist-upgrade -y
+apt install docker-ce kubeadm -y
+apt autoremove -y && apt autoclean -y
 
 dphys-swapfile swapoff && dphys-swapfile uninstall && update-rc.d dphys-swapfile remove
 if ! grep -q cgroup_enable "/boot/cmdline.txt"; then

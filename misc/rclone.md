@@ -12,5 +12,5 @@ curl https://rclone.org/install.sh | sudo bash
 
 Needed if remotes should be mountet to the file system.
 ```
-sudo apt-get install fusermount
+sudo apt install fusermount
 ```

@@ -8,10 +8,10 @@ fi
 curl -fsSL https://download.docker.com/linux/raspbian/gpg | apt-key add -
 echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" > /etc/apt/sources.list.d/docker.list
 
-apt-get update
-apt-get upgrade -y && apt-get dist-upgrade -y
-apt-get install docker-ce -y
-apt-get autoremove -y
+apt update
+apt upgrade -y && apt dist-upgrade -y
+apt install docker-ce -y
+apt autoremove -y
 
 #dphys-swapfile swapoff && dphys-swapfile uninstall && update-rc.d dphys-swapfile remove
 if ! grep -q cgroup_enable "/boot/cmdline.txt"; then

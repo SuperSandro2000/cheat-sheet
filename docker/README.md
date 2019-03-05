@@ -51,7 +51,7 @@ docker plugin install fentas/davfs
 
 Install compose
 ```
-sudo apt-get install python-pip && pip install -U docker-compose
+sudo apt install python-pip && pip install -U docker-compose
 ```
 
 Up a compose file and remove old container.

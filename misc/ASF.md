@@ -5,5 +5,5 @@
 
 # Missing packages
 ```
-sudo apt-get install libunwind8
+sudo apt install libunwind8
 ```

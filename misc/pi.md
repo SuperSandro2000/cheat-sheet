@@ -7,7 +7,7 @@
 
 Source: [github.com/cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat/blob/master/ubuntu-18.04.1-server-arm64.sh)
 ```
-sudo apt-get install qemu-system-arm qemu-efi
+sudo apt install qemu-system-arm qemu-efi
 
 iso=ubuntu-18.10-server-arm64.iso
 img="${iso}.img.qcow2"

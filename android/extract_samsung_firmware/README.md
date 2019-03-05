@@ -1,6 +1,6 @@
 # Required packages
 ```
-sudo apt-get install unzip tar liblz4-tool android-tools-fsutils
+sudo apt install unzip tar liblz4-tool android-tools-fsutils
 ```
 
 # Windows fix
