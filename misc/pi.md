@@ -5,6 +5,7 @@
 
 ## Build Ubuntu
 
+Download and start the emulator.
 Source: [github.com/cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat/blob/master/ubuntu-18.04.1-server-arm64.sh)
 ```
 sudo apt install qemu-system-arm qemu-efi
@@ -42,21 +43,23 @@ qemu-system-aarch64 \
   -pflash flash1.img \
   -smp 4 \
 ;
+```
 
+Upgrading packages can be a bit unstable and require multiple tries. Skip if you are on a hurry.
+```
+apt update
+apt upgrade
+apt autoremove
+```
+
+Build the linux iso.
+```
+apt install bzr dpkg-dev debhelper
 bzr branch lp:~fo0bar/livecd-rootfs/raspi2-rpi3
-qemu-debootstrap --arch arm64 bionic arm64-chroot
-
-mkdir arm64-chroot/build
-mv raspi2-rpi3 arm64-chroot/build/
-chroot arm64-chroot
-cd build/raspi2-rpi3
-apt install dpkg-dev debhelper
+cd raspi2-rpi3
 dpkg-buildpackage -uc -us
 dpkg -i ../*.deb
 apt --fix-broken install
-
-//mkdir -p build/chroot
-//cd build
 cd ..
 
 cp -a /usr/share/livecd-rootfs/live-build/auto .
