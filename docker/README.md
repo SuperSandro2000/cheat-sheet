@@ -2,17 +2,14 @@
 
 ## Table of Contents
 
-- [General](#general)
-- [Compose](#compose)
-- [Swarm](#swarm)
-
-  - [Master](#master)
-  - [Worker](#worker)
-
-- [Swarm setup](swarm-setup/README.md)
-
-- [Postgres](#postgres)
-- [Misc](#misc)
+* [General](#general)
+* [Compose](#compose)
+* [Swarm](#swarm)
+  * [Master](#master)
+  * [Worker](#worker)
+* [Swarm setup](swarm-setup/README.md)
+* [Postgres](#postgres)
+* [Misc](#misc)
 
 ## General
 
