@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Install RVM](#install-rvm)
+* [Install RVM](#install-rvm)
 
 ## Install RVM
 
