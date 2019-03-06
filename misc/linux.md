@@ -50,3 +50,13 @@ Remove config files from removed packages.
 ```shell
 awk '/rc / {print $2}' <(dpkg -l) | xargs sudo apt purge -y
 ```
+
+Multiline append with tee heredoc
+
+```
+tee -a /path/to/file <<EOF
+multi
+line
+content
+EOF
+```
