@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [Users](#users)
-- [Profile](#profile)
-- [Misc](#misc)
+* [Users](#users)
+* [Profile](#profile)
+* [Misc](#misc)
 
 ## Users
 
