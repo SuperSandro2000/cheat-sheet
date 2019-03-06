@@ -13,4 +13,5 @@
 - [Python](python.md)
 - [Rclone](rclone.md)
 - [Ruby](ruby.md)
+- [SSH](ssh.md)
 - [Yunohost](yunohost.md)

@@ -38,5 +38,6 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
   - [Python](misc/python.md)
   - [Rclone](misc/rclone.md)
   - [Ruby](misc/ruby.md)
+  - [SSH](misc/ssh.md)
   - [Yunohost](misc/yunohost.md)
   - [VirtualBox](misc/virtualbox.md)
