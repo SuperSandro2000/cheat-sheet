@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Misc](#misc)
+* [Misc](#misc)
 
 ## Misc
 
