@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Setup MySQL DB](#setup-mysql-db)
+* [Setup MySQL DB](#setup-mysql-db)
 
 ## Setup MySQL DB
 
