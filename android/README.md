@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Extract Samung Firmware](android/extract_samsung_firmware/README.md)
+* [Extract Samung Firmware](extract_samsung_firmware/README.md)
 * [Porting](#porting)
 
 ## Porting
