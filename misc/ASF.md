@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Missing packages](#missing-packages)
+* [Missing packages](#missing-packages)
 
 # Missing packages
 
