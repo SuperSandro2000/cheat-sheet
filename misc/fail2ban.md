@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Install from source](#install-from-source)
+* [Install from source](#install-from-source)
 
 ## Install from source
 
