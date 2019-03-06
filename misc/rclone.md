@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Install](#install)
+* [Install](#install)
 
 ## Install
 

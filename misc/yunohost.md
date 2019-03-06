@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Misc](#misc)
+* [Installation](#installation)
+* [Misc](#misc)
 
 ## Installation
 

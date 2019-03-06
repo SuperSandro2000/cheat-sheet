@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Build Ubuntu](#build-ubuntu)
-- [Raspberry Pi Buster Upgrade](#raspberry-pi-buster-ugrade)
+* [Build Ubuntu](#build-ubuntu)
+* [Raspberry Pi Buster Upgrade](#raspberry-pi-buster-ugrade)
 
 ## Build Ubuntu
 

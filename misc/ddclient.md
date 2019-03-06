@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Example config file](#example-config-file)
+* [Example config file](#example-config-file)
 
 ## Example config file
 

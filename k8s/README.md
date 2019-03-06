@@ -2,12 +2,11 @@
 
 ## Table of Contents
 
-- [Instructions](#instructions)
-- [Commands](#commands)
-- [Ports](#ports)
-
-  - [Master node](#master-node)
-  - [Worker node](#worker-node)
+* [Instructions](#instructions)
+* [Commands](#commands)
+* [Ports](#ports)
+  * [Master node](#master-node)
+  * [Worker node](#worker-node)
 
 ## Instructions
 
