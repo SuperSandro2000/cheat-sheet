@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Install Guest Additions](#install-guest-additions)
+* [Install Guest Additions](#install-guest-additions)
 
 ## Install Guest Additions
 
