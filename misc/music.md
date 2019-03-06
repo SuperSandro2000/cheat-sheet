@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Download](#Download)
+* [Download](#Download)
 
 ## Download
 
