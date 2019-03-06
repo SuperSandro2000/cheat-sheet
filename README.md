@@ -7,7 +7,7 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
 * [Android](android/README.md)
   * [Extract Samung Firmware](android/extract_samsung_firmware/README.md)
   * [Porting](android/README.md#porting)
-* [Custom kernel](misc/custom-kernel.md)
+* [Linux kernel](misc/linux-kernel.md)
 * [Docker](docker/README.md)
   * [Compose](docker/README.md#compose)
   * [Swarm](docker/README.md#swarm)
