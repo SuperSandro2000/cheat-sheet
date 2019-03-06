@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [2FA](#2fa)
+* [2FA](#2fa)
 
 ## 2FA
 
