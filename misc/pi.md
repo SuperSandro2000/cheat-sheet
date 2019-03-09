@@ -43,7 +43,8 @@ qemu-system-aarch64 \
 -nographic \
 -pflash flash0.img \
 -pflash flash1.img \
--smp 4
+-smp 4 \
+-net nic -net user,hostfwd=tcp::2222-:22
 ```
 
 Upgrading packages can be a bit unstable and require multiple tries. Skip if you are on a hurry.
