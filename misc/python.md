@@ -2,7 +2,16 @@
 
 ## Table of Contents
 
+* [Upgrade pip](#upgrade-pip)
 * [Misc](#misc)
+
+## Upgrade pip
+
+upgrade pip correctly that it works without sudo
+
+```shell
+sudo -H pip3 install --upgrade pip
+```
 
 ## Misc
 
