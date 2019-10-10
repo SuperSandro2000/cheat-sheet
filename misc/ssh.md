@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [2FA](#2fa)
+* [Misc](#misc)
 
 ## 2FA
 
@@ -50,3 +51,11 @@ auth       required     pam_google_authenticator.so
 
 Edit `sudo nano /etc/ssh/sshd_config` and change `ChallengeResponseAuthentication no` to `yes`.
 Now restart `sudo systemctl restart ssh` and done.
+
+## Misc
+
+Missing ``~/.ssh`` directory
+
+```shell
+mkdir ~/.ssh/ -m 700
+```
