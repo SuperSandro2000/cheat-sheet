@@ -6,6 +6,7 @@
 * [Cron jobs](cron.md)
 * [ddclient](ddclient.md)
 * [Fail2Ban](fail2ban.md)
+* [Git](git.md)
 * [Gitea](gitea.md)
 * [Linux Kernel](linux-kernel.md)
 * [Linux](linux.md)

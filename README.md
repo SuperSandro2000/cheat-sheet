@@ -22,6 +22,7 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
   * [Cron jobs](misc/cron.md)
   * [ddclient](misc/ddclient.md)
   * [Fail2Ban](misc/fail2ban.md)
+  * [Git](git.md)
   * [Gitea](misc/gitea.md)
   * [Linux](misc/linux.md)
   * [Linux kernel](misc/linux-kernel.md)
