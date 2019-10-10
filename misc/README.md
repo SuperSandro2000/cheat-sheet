@@ -8,6 +8,7 @@
 * [Fail2Ban](fail2ban.md)
 * [Git](git.md)
 * [Gitea](gitea.md)
+* [GPG](misc/gpg.md)
 * [Linux Kernel](linux-kernel.md)
 * [Linux](linux.md)
 * [Music](music.md)

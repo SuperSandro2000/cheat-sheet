@@ -24,6 +24,7 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
   * [Fail2Ban](misc/fail2ban.md)
   * [Git](git.md)
   * [Gitea](misc/gitea.md)
+  * [GPG](misc/gpg.md)
   * [Linux](misc/linux.md)
   * [Linux kernel](misc/linux-kernel.md)
   * [Music](misc/music.md)
