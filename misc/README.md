@@ -12,6 +12,7 @@
 * [Linux Kernel](linux-kernel.md)
 * [Linux](linux.md)
 * [Music](music.md)
+* [Nextcloud](nextcloud.md)
 * [Python](python.md)
 * [Rclone](rclone.md)
 * [Ruby](ruby.md)

@@ -28,6 +28,7 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
   * [Linux](misc/linux.md)
   * [Linux kernel](misc/linux-kernel.md)
   * [Music](misc/music.md)
+  * [Nextcloud](misc/nextcloud.md)
   * [Pi](misc/pi.md)
   * [Python](misc/python.md)
   * [Rclone](misc/rclone.md)
