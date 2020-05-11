@@ -1,10 +1,16 @@
-# Required packages
+# Extract Samsung firmware
+
+- [Extract Samsung firmware](#extract-samsung-firmware)
+  - [Required packages](#required-packages)
+    - [Windows fix](#windows-fix)
+
+## Required packages
 
 ```shell
 sudo apt install unzip tar liblz4-tool android-tools-fsutils
 ```
 
-## Windows fix
+### Windows fix
 
 If you get this error:
 

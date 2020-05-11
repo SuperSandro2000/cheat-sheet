@@ -2,9 +2,11 @@
 
 ## Table of Contents
 
-* [Missing packages](#missing-packages)
+- [ArchiSteamFarm](#archisteamfarm)
+  - [Table of Contents](#table-of-contents)
+  - [Missing packages](#missing-packages)
 
-# Missing packages
+## Missing packages
 
 ```shell
 sudo apt install libunwind8

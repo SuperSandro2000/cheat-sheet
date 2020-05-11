@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Install from source](#install-from-source)
+- [Fail2Ban](#fail2ban)
+  - [Table of Contents](#table-of-contents)
+  - [Install from source](#install-from-source)
 
 ## Install from source
 

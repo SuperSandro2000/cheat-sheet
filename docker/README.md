@@ -2,14 +2,17 @@
 
 ## Table of Contents
 
-* [General](#general)
-* [Compose](#compose)
-* [Swarm](#swarm)
-  * [Master](#master)
-  * [Worker](#worker)
-* [Swarm setup](swarm-setup/README.md)
-* [Postgres](#postgres)
-* [Misc](#misc)
+- [Docker](#docker)
+  - [Table of Contents](#table-of-contents)
+  - [General](#general)
+  - [Compose](#compose)
+  - [Swarm](#swarm)
+    - [Master](#master)
+  - [Worker](#worker)
+    - [Linux](#linux)
+    - [Windows](#windows)
+  - [Postgres](#postgres)
+  - [Misc](#misc)
 
 ## General
 

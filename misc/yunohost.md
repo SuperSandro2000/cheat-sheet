@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Misc](#misc)
+- [Yunohost](#yunohost)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Misc](#misc)
 
 ## Installation
 

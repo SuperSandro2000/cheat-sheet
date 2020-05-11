@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Install](#install)
+- [Rclone](#rclone)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
 
 ## Install
 

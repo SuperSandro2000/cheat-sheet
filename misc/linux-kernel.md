@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Cross-Compile RPI kernel](#cross-compile-rpi-kernel)
+- [Linux Kernel](#linux-kernel)
+  - [Table of Contents](#table-of-contents)
+  - [Cross-Compile RPI kernel](#cross-compile-rpi-kernel)
 
 ## Cross-Compile RPI kernel
 

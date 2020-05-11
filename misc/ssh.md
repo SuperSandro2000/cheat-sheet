@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-* [2FA](#2fa)
-* [Misc](#misc)
+- [SSH](#ssh)
+  - [Table of Contents](#table-of-contents)
+  - [2FA](#2fa)
+  - [Misc](#misc)
 
 ## 2FA
 

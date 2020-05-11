@@ -2,12 +2,15 @@
 
 ## Table of Contents
 
-* [Aliases](#aliases)
-* [Color](#color)
+- [Git](#git)
+  - [Table of Contents](#table-of-contents)
+  - [Aliases](#aliases)
+  - [Color](#color)
+  - [Settings](#settings)
 
 ## Aliases
 
-```
+```shell
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.branch "branch -a"
@@ -22,7 +25,7 @@ git config --global alias.tag "tag -l"
 
 ## Color
 
-```
+```shell
 git config --global color.branch.current yellow reverse
 git config --global color.branch.local yellow
 git config --global color.branch.remote green
@@ -37,7 +40,7 @@ git config --global color.status.untracked cyan
 
 ## Settings
 
-```
+```shell
 git config --global apply.whitespace fix
 git config --global commit.gpgsign true
 git config --global diff.renames copies

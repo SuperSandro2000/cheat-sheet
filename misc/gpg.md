@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Misc](#misc)
+- [GPG](#gpg)
+  - [Table of Contents](#table-of-contents)
+  - [Misc](#misc)
 
 ## Misc
 

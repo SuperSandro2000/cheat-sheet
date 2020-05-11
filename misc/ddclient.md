@@ -2,13 +2,15 @@
 
 ## Table of Contents
 
-* [Example config file](#example-config-file)
+- [DDClient](#ddclient)
+  - [Table of Contents](#table-of-contents)
+  - [Example config file](#example-config-file)
 
 ## Example config file
 
 Replace things in double quotes! domain.tld is your cloudflare domain you want to update. eg: google.com
 
-```shell
+```perl
 daemon=600
 syslog=yes
 mail="user"

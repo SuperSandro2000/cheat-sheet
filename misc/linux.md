@@ -2,9 +2,11 @@
 
 ## Table of Contents
 
-* [Users](#users)
-* [Profile](#profile)
-* [Misc](#misc)
+- [Linux](#linux)
+  - [Table of Contents](#table-of-contents)
+  - [Users](#users)
+  - [Profile](#profile)
+  - [Misc](#misc)
 
 ## Users
 
@@ -53,7 +55,7 @@ awk '/rc / {print $2}' <(dpkg -l) | xargs sudo apt purge -y
 
 Multiline append with tee heredoc
 
-```
+```shell
 tee -a /path/to/file <<EOF
 multi
 line

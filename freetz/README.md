@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-- [Compile](#compile)
+- [Freetz](#freetz)
+  - [Table of Contents](#table-of-contents)
+  - [Compile](#compile)
 
 ## Compile
 

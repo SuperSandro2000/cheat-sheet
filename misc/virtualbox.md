@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Install Guest Additions](#install-guest-additions)
+- [VirtualBox](#virtualbox)
+  - [Table of Contents](#table-of-contents)
+  - [Install Guest Additions](#install-guest-additions)
 
 ## Install Guest Additions
 

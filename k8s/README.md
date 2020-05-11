@@ -2,11 +2,13 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Commands](#commands)
-* [Ports](#ports)
-  * [Master node](#master-node)
-  * [Worker node](#worker-node)
+- [Kubernetes](#kubernetes)
+  - [Table of Contents](#table-of-contents)
+  - [Instructions](#instructions)
+  - [Commands](#commands)
+  - [Ports](#ports)
+    - [Master node](#master-node)
+    - [Worker node](#worker-node)
 
 ## Instructions
 
@@ -23,7 +25,7 @@
 
 ## Commands
 
-```
+```shell
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 apt update && apt install -y kubeadm

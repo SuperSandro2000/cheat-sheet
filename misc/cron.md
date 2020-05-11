@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Misc](#misc)
+- [Crontab](#crontab)
+  - [Table of Contents](#table-of-contents)
+  - [Misc](#misc)
 
 ## Misc
 
@@ -13,7 +15,7 @@ SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 ```
 
-or 
+or
 
 ```shell
 SHELL=/bin/bash

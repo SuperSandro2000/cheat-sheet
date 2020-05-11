@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Install RVM](#install-rvm)
+- [Ruby](#ruby)
+  - [Table of Contents](#table-of-contents)
+  - [Install RVM](#install-rvm)
 
 ## Install RVM
 

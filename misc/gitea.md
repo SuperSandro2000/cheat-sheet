@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Setup MySQL DB](#setup-mysql-db)
+- [Gitea](#gitea)
+  - [Table of Contents](#table-of-contents)
+  - [Setup MySQL DB](#setup-mysql-db)
 
 ## Setup MySQL DB
 

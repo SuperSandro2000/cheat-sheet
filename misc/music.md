@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Download](#Download)
+- [Music](#music)
+  - [Table of Contents](#table-of-contents)
+  - [Download](#download)
 
 ## Download
 

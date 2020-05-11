@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
-* [Discover devices](#discover-devices)
+- [Network](#network)
+  - [Table of Contents](#table-of-contents)
+  - [Discover devices](#discover-devices)
 
 ## Discover devices
 
