@@ -42,7 +42,7 @@ git config --global color.status.untracked cyan
 
 ```shell
 git config --global apply.whitespace fix
-git config --global credential.helper = store
+git config --global credential.helper store
 git config --global commit.gpgsign true
 git config --global diff.renames copies
 git config --global diff.algorithm patience
