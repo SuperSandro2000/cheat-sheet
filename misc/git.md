@@ -42,10 +42,13 @@ git config --global color.status.untracked cyan
 
 ```shell
 git config --global apply.whitespace fix
+git config --global credential.helper = store
 git config --global commit.gpgsign true
 git config --global diff.renames copies
+git config --global diff.algorithm patience
 git config --global help.autocorrect 1
-git config --global push.default current
+git config --global protocol.version 2
 git config --global pull.rebase true
+git config --global push.default current
 git config --global user.signingkey 3AF5A43A3EECC2E5
 ```
