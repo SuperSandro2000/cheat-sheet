@@ -15,6 +15,7 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
   * [Swarm setup](docker/swarm-setup/README.md)
   * [Postgres](docker/README.md#postgres)
   * [Misc](docker/README.md#misc)
+* [Factorio](factorio/README.md)
 * [Freetz](freetz/README.md)
 * [Kubernetes](k8s/README.md)
 * [Misc](misc/README.md)
