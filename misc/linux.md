@@ -50,7 +50,7 @@ sudo netstat -tulpn | grep LISTEN
 Remove config files from removed packages.
 
 ```shell
-awk '/rc / {print $2}' <(dpkg -l) | xargs sudo apt purge -y
+awk '/^rc / {print $2}' <(dpkg -l) | xargs sudo apt purge -y
 ```
 
 Multiline append with tee heredoc
