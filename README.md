@@ -19,7 +19,6 @@ First of all I need to recommend [Ciro Santilli's Cheat Sheet](https://github.co
 * [Freetz](freetz/README.md)
 * [Kubernetes](k8s/README.md)
 * [Misc](misc/README.md)
-  * [ASF](misc/ASF.md)
   * [Cron jobs](misc/cron.md)
   * [ddclient](misc/ddclient.md)
   * [Fail2Ban](misc/fail2ban.md)

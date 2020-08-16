@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-* [ASF](ASF.md)
 * [Cron jobs](cron.md)
 * [ddclient](ddclient.md)
 * [Fail2Ban](fail2ban.md)
